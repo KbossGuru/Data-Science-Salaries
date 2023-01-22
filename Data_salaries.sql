@@ -14,14 +14,11 @@ ALTER TABLE Data_Salaries.dbo.ds_salaries
 ALTER TABLE Data_Salaries.dbo.ds_salaries
 	ALTER COLUMN salary_in_usd INT;
 
-SELECT DISTINCT(work_year) 
-FROM Data_Salaries.dbo.ds_salaries;
+--on the remote_ratio table, identify the remote, partially remote and not remote jobs
 
 UPDATE Data_Salaries.dbo.ds_salaries
 SET remote_ratio = 'remote'
 WHERE remote_ratio = 100 ;
-
---the remote_ratio table, identify the remote, partially remote and not remote jobs
 
 UPDATE Data_Salaries.dbo.ds_salaries
 SET remote_ratio = 'not_remote'
