@@ -105,3 +105,27 @@ FROM Data_Salaries.dbo.ds_salaries
 WHERE work_year = 2022
 GROUP BY company_location
 ORDER BY average_salary DESC;
+
+-- find relationships between job title, remote ratio and work year
+
+SELECT remote_ratio, job_title, work_year
+FROM Data_Salaries.dbo.ds_salaries
+GROUP BY remote_ratio, job_title, work_year;
+
+-- relationships between job title, experience level and work year
+
+SELECT experience_level, job_title, work_year
+FROM Data_Salaries.dbo.ds_salaries
+GROUP BY experience_level, job_title, work_year;
+
+-- relationships between job title, employment type and work year
+
+SELECT employment_type, job_title, work_year
+FROM Data_Salaries.dbo.ds_salaries
+GROUP BY employment_type, job_title, work_year;
+
+-- relationships between job title, employment type and work year
+
+SELECT company_size, job_title, work_year
+FROM Data_Salaries.dbo.ds_salaries
+GROUP BY company_size, job_title, work_year;
