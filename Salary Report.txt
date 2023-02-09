@@ -1,0 +1,11 @@
+Problem - Analyze the salaries of different data science job titles.
+
+Solution
+- The total average salary for jobs in data science $112k
+- The highest paying job title is Data Analytics lead 
+- Generally, Executive-level Jobs have the highest salaries
+- Remote jobs pay more than non-remote jobs
+- Russia and USA are the highest paying countries
+- Contract Jobs have the highest average salaries
+- USA have the highest paying Remote jobs
+- Data scientists earn the most from freelancing
